@@ -74,6 +74,8 @@ bool ConstantsAnalysis::runOnModuleCustom(
 
 bool ConstantsAnalysis::run()
 {
+        return false;
+
 	ReachingDefinitionsAnalysis RDA;
 	RDA.runOnModule(*_module, _abi);
 
